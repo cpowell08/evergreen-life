@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#183d32">
+<link rel="manifest" href="./manifest.webmanifest">
+<title>Evergreen — My Life</title>
+<style>
+:root{--bg:#f4f5ef;--panel:#fffefa;--ink:#24352e;--muted:#758078;--green:#244c3e;--green2:#dce8dc;--line:#e4e8df;--gold:#c5a76b;--shadow:0 8px 24px #1c35230c}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{max-width:1100px;margin:auto;padding:20px 18px 100px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:22px}.brand{display:flex;align-items:center;gap:11px}.logo{width:42px;height:42px;border-radius:14px;background:var(--green);color:white;display:grid;place-items:center;font-size:22px}.brand h1{font-size:20px;margin:0;letter-spacing:-.5px}.brand p{margin:1px 0 0;color:var(--muted);font-size:12px}.date{font-size:12px;color:var(--muted);text-align:right}.hero{background:linear-gradient(120deg,#244c3e,#18382f);color:#fff;border-radius:24px;padding:25px;margin-bottom:18px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:200px;height:200px;border:1px solid #ffffff1f;border-radius:50%;right:-55px;top:-80px;box-shadow:0 0 0 25px #ffffff08,0 0 0 50px #ffffff06}.eyebrow{text-transform:uppercase;letter-spacing:1.6px;font-size:10px;opacity:.75}.hero h2{font-size:27px;line-height:1.12;margin:7px 0 9px;letter-spacing:-.8px}.hero p{margin:0;color:#e0e9e2;max-width:500px;font-size:13px}.hero-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.btn{border:0;border-radius:12px;padding:10px 14px;background:var(--green);color:white;font-weight:600;font-size:13px}.btn.light{background:#ffffff1a;border:1px solid #ffffff40}.btn.secondary{background:var(--green2);color:var(--green)}.btn.ghost{background:transparent;color:var(--green);border:1px solid var(--line)}.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px}.card{grid-column:span 6;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:17px;box-shadow:var(--shadow);min-width:0}.card.third{grid-column:span 4}.card.full{grid-column:1/-1}.card h3{margin:0 0 3px;font-size:15px}.sub{color:var(--muted);font-size:12px;margin:0 0 14px}.metric{font-size:26px;font-weight:700;letter-spacing:-.8px}.metric small{font-size:12px;color:var(--muted);font-weight:500;letter-spacing:0}.row{display:flex;align-items:center;justify-content:space-between;gap:10px}.line{height:7px;background:#e9eee7;border-radius:10px;overflow:hidden;margin:9px 0}.line span{display:block;height:100%;width:0;background:#6f9678;border-radius:10px}.muted{color:var(--muted)}.tiny{font-size:11px;color:var(--muted)}.stack{display:grid;gap:10px}.empty{padding:13px;background:#f7f8f3;border-radius:12px;color:var(--muted);font-size:13px}.item{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line)}.item:last-child{border-bottom:0}.item input[type=checkbox]{accent-color:var(--green);margin-top:4px;width:16px;height:16px}.item-main{flex:1;min-width:0}.item-title{font-size:13px;font-weight:600}.item-meta{font-size:11px;color:var(--muted);margin-top:2px}.tag{font-size:10px;padding:4px 7px;border-radius:20px;background:var(--green2);color:var(--green);white-space:nowrap}.tabs{position:fixed;z-index:10;bottom:0;left:0;right:0;display:flex;justify-content:center;background:#fffefaed;backdrop-filter:blur(18px);border-top:1px solid var(--line);padding:8px max(8px,env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom));gap:3px}.tab{border:0;background:transparent;color:var(--muted);font-size:10px;padding:7px 10px;border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:3px;min-width:55px}.tab span{font-size:18px}.tab.active{background:var(--green2);color:var(--green);font-weight:700}.section{display:none}.section.active{display:block}.section-head{margin:10px 0 18px}.section-head h2{font-size:25px;margin:0;letter-spacing:-.7px}.section-head p{margin:4px 0;color:var(--muted);font-size:13px}.form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.field{display:grid;gap:5px}.field.wide{grid-column:1/-1}.field label{font-size:11px;color:var(--muted);font-weight:650}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:10px;background:#fff;padding:10px;color:var(--ink);outline-color:#76947d}.field textarea{min-height:75px;resize:vertical}.form-actions{grid-column:1/-1;display:flex;gap:8px;flex-wrap:wrap;margin-top:3px}.list-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px}.list-head h3{margin:0}.pill{border:1px solid var(--line);background:white;border-radius:99px;padding:6px 10px;font-size:11px;color:var(--muted)}.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}.checkrow{display:flex;align-items:center;gap:8px;font-size:13px}.checkrow input{accent-color:var(--green)}.divider{height:1px;background:var(--line);margin:15px 0}.notice{background:#f3f0e7;color:#675b3f;padding:11px 12px;border-radius:11px;font-size:12px;margin-top:12px}.toast{position:fixed;top:15px;left:50%;transform:translateX(-50%);background:#183d32;color:white;padding:10px 15px;border-radius:99px;font-size:12px;display:none;z-index:20;box-shadow:var(--shadow)}.small-btn{border:0;background:#edf2ea;color:var(--green);border-radius:9px;padding:7px 9px;font-size:11px;font-weight:650}.danger{color:#9b4c43;background:#f7e9e5}.footer{text-align:center;margin-top:22px;color:var(--muted);font-size:10px}.chart{height:90px;display:flex;align-items:end;gap:7px;padding-top:12px}.bar{flex:1;background:#dce8dc;border-radius:5px 5px 2px 2px;min-width:8px;position:relative}.bar b{position:absolute;bottom:-18px;left:50%;transform:translateX(-50%);font-size:9px;color:var(--muted);font-weight:500}
+@media(min-width:800px){.app{padding-top:28px}.hero{padding:32px}.hero h2{font-size:34px}.card{padding:21px}}
+@media(max-width:620px){.app{padding:14px 12px 100px}.card,.card.third{grid-column:1/-1}.hero{padding:21px}.hero h2{font-size:25px}.two{grid-template-columns:1fr}.tab{min-width:0;flex:1;padding:7px 2px}.tab span{font-size:17px}.date{max-width:110px}.form{grid-template-columns:1fr}.field.wide,.form-actions{grid-column:auto}}
+@media(prefers-color-scheme:dark){body.dark-auto{--bg:#121a16;--panel:#1b2620;--ink:#e6ece6;--muted:#a2afa5;--green:#a9c8ad;--green2:#293c30;--line:#303d34;--gold:#c5a76b;--shadow:0 8px 24px #0002}body.dark-auto .field input,body.dark-auto .field select,body.dark-auto .field textarea,body.dark-auto .pill{background:#202d25;color:var(--ink)}body.dark-auto .empty{background:#202b24}body.dark-auto .tabs{background:#17211bed}body.dark-auto .line{background:#303d34}body.dark-auto .notice{background:#3b3528;color:#e7d9b5}}
+</style>
+</head>
+<body class="dark-auto">
+<div class="toast" id="toast"></div>
+<div class="app">
+<header class="top">
+  <div class="brand"><div class="logo">✳</div><div><h1>evergreen</h1><p>your life, in one place</p></div></div>
+  <div class="date" id="todayDate"></div>
+</header>
+<section id="home" class="section active">
+  <div class="hero">
+    <div class="eyebrow">Your personal dashboard</div>
+    <h2 id="greeting">A little more balance.<br>A little more breathing room.</h2>
+    <p>Keep track of what matters, make room for rest, and take today one step at a time.</p>
+    <div class="hero-actions"><button class="btn light" onclick="go('schedule')">＋ Plan my day</button><button class="btn light" onclick="go('health')">♡ Daily check-in</button></div>
+  </div>
+  <div class="grid">
+    <article class="card third"><div class="row"><h3>Health check-in</h3><span>🌿</span></div><p class="sub">A quick snapshot of today</p><div class="metric" id="sleepMetric">— <small>hrs sleep</small></div><div class="tiny" id="energyLabel">Add your check-in in Health</div><div class="line"><span id="sleepBar"></span></div><button class="small-btn" onclick="go('health')">Log today</button></article>
+    <article class="card third"><div class="row"><h3>Money snapshot</h3><span>⌁</span></div><p class="sub">Your monthly spending</p><div class="metric" id="budgetMetric">$0 <small>spent</small></div><div class="tiny" id="budgetLabel">Set a monthly budget to begin</div><div class="line"><span id="budgetBar"></span></div><button class="small-btn" onclick="go('money')">View budget</button></article>
+    <article class="card third"><div class="row"><h3>Today's tasks</h3><span>✓</span></div><p class="sub">Small steps count</p><div class="metric" id="taskMetric">0 <small>done</small></div><div class="tiny" id="taskLabel">Tasks you add will show here</div><div class="line"><span id="taskBar"></span></div><button class="small-btn" onclick="go('life')">View tasks</button></article>
+    <article class="card"><div class="row"><h3>Today's plan</h3><span class="tag" id="planCount">0 items</span></div><p class="sub">Your schedule at a glance</p><div id="homeEvents" class="stack"></div><div style="margin-top:12px"><button class="btn secondary" onclick="go('schedule')">Open schedule</button></div></article>
+    <article class="card"><div class="row"><h3>Things to remember</h3><span>✦</span></div><p class="sub">Your next small wins</p><div id="homeTasks" class="stack"></div><div style="margin-top:12px"><button class="btn secondary" onclick="go('life')">Open my life</button></div></article>
+    <article class="card full"><div class="row"><div><h3>Make space for yourself</h3><p class="sub" style="margin:4px 0 0">A reminder that your life is more than a to-do list.</p></div><span style="font-size:25px">☁</span></div><p style="font-size:13px;margin-bottom:0">Rest, friends, hobbies, fresh air, and doing absolutely nothing all count as living well.</p></article>
+  </div>
+</section>
+
+<section id="schedule" class="section">
+  <div class="section-head"><h2>My schedule</h2><p>Work, appointments, workouts, dog walks, and downtime.</p></div>
+  <div class="grid">
+    <article class="card"><h3>Add an event</h3><p class="sub">Build a plan that fits your actual day.</p>
+      <form id="eventForm" class="form">
+        <div class="field wide"><label>What is it?</label><input name="title" required placeholder="Work shift, gym, walk Szandy…"></div>
+        <div class="field"><label>Date</label><input type="date" name="date" required></div><div class="field"><label>Start time</label><input type="time" name="time"></div>
+        <div class="field"><label>Category</label><select name="category"><option>Work</option><option>Workout</option><option>Dog</option><option>Appointment</option><option>Chores</option><option>Social</option><option>Downtime</option><option>Other</option></select></div>
+        <div class="field"><label>Duration (minutes)</label><input name="duration" type="number" min="0" step="5" placeholder="60"></div>
+        <div class="field wide"><label>Notes (optional)</label><input name="notes" placeholder="Location, prep, anything to remember"></div>
+        <div class="form-actions"><button class="btn" type="submit">Add to schedule</button></div>
+      </form>
+    </article>
+    <article class="card"><div class="list-head"><h3>Upcoming events</h3><input id="eventFilter" type="date" class="pill" aria-label="Filter events by date"></div><div id="eventList" class="stack"></div></article>
+  </div>
+</section>
+
+<section id="health" class="section">
+  <div class="section-head"><h2>Health & fitness</h2><p>Track trends without expecting every day to be perfect.</p></div>
+  <div class="grid">
+    <article class="card"><h3>Daily check-in</h3><p class="sub">Your entries are saved on this device.</p>
+      <form id="healthForm" class="form">
+        <div class="field"><label>Date</label><input name="date" type="date" required></div><div class="field"><label>Sleep (hours)</label><input name="sleep" type="number" min="0" max="24" step=".25" placeholder="7.5"></div>
+        <div class="field"><label>Energy (1–5)</label><select name="energy"><option value="">Choose…</option><option value="1">1 · Very low</option><option value="2">2 · Low</option><option value="3">3 · Okay</option><option value="4">4 · Good</option><option value="5">5 · Great</option></select></div>
+        <div class="field"><label>Mood (1–5)</label><select name="mood"><option value="">Choose…</option><option value="1">1 · Low</option><option value="2">2 · Not great</option><option value="3">3 · Okay</option><option value="4">4 · Good</option><option value="5">5 · Great</option></select></div>
+        <div class="field"><label>Weight (lb, optional)</label><input name="weight" type="number" min="0" step=".1" placeholder="Optional"></div><div class="field"><label>Cycle day (optional)</label><input name="cycle" type="number" min="1" max="45" placeholder="Optional"></div>
+        <div class="field wide"><label>Symptoms / notes</label><textarea name="notes" placeholder="Headache, cramps, recovery, wins…"></textarea></div>
+        <div class="form-actions"><button class="btn" type="submit">Save check-in</button></div>
+      </form>
+    </article>
+    <article class="card"><h3>Movement log</h3><p class="sub">Cardio, strength, sports, and outdoor time.</p>
+      <form id="workoutForm" class="form">
+        <div class="field"><label>Date</label><input name="date" type="date" required></div><div class="field"><label>Activity</label><select name="type"><option>Walk</option><option>Run</option><option>Incline treadmill</option><option>Strength</option><option>Soccer</option><option>Hike</option><option>Swim</option><option>Mobility / PT</option><option>Other</option></select></div>
+        <div class="field"><label>Minutes</label><input name="minutes" type="number" min="0" required placeholder="30"></div><div class="field"><label>Effort</label><select name="effort"><option>Easy</option><option>Moderate</option><option>Hard</option></select></div>
+        <div class="field wide"><label>Notes</label><input name="notes" placeholder="How did it feel?"></div><div class="form-actions"><button class="btn" type="submit">Log movement</button></div>
+      </form>
+      <div class="divider"></div><div class="row"><span class="muted">Movement this week</span><strong id="weeklyMinutes">0 min</strong></div><div id="workoutList" class="stack" style="margin-top:8px"></div>
+    </article>
+    <article class="card full"><h3>Recent check-ins</h3><p class="sub">Look for patterns over time, not perfection.</p><div id="healthList" class="stack"></div></article>
+  </div>
+</section>
+
+<section id="money" class="section">
+  <div class="section-head"><h2>My money</h2><p>A simple overview of your income, bills, and spending.</p></div>
+  <div class="grid">
+    <article class="card"><h3>Monthly budget</h3><p class="sub">Set a target and keep an eye on what remains.</p>
+      <form id="budgetForm" class="form"><div class="field"><label>Monthly spending budget ($)</label><input name="budget" type="number" min="0" step=".01" placeholder="e.g. 400"></div><div class="field"><label>Monthly income target ($)</label><input name="income" type="number" min="0" step=".01" placeholder="Optional"></div><div class="form-actions"><button class="btn" type="submit">Save budget</button></div></form>
+      <div class="divider"></div><div class="row"><span class="muted">Spent this month</span><strong id="moneySpent">$0.00</strong></div><div class="line"><span id="moneyProgress"></span></div><div class="row"><span class="muted">Budget remaining</span><strong id="moneyRemaining">$0.00</strong></div>
+    </article>
+    <article class="card"><h3>Add a transaction</h3><p class="sub">Track purchases, paychecks, bills, and savings.</p>
+      <form id="transactionForm" class="form">
+        <div class="field wide"><label>Description</label><input name="title" required placeholder="Groceries, rent, paycheck…"></div>
+        <div class="field"><label>Amount ($)</label><input name="amount" type="number" min="0.01" step=".01" required placeholder="0.00"></div>
+        <div class="field"><label>Type</label><select name="type"><option value="expense">Expense</option><option value="income">Income</option><option value="bill">Bill paid</option><option value="saving">Savings</option></select></div>
+        <div class="field"><label>Category</label><select name="category"><option>Groceries</option><option>Gas</option><option>Rent</option><option>Utilities</option><option>Eating out</option><option>Dog</option><option>Debt</option><option>Paycheck</option><option>Fun</option><option>Other</option></select></div>
+        <div class="field"><label>Date</label><input name="date" type="date" required></div>
+        <div class="form-actions"><button class="btn" type="submit">Add transaction</button></div>
+      </form>
+    </article>
+    <article class="card full"><div class="list-head"><h3>Transactions</h3><select id="transactionFilter" class="pill"><option value="month">This month</option><option value="all">All time</option></select></div><div id="transactionList" class="stack"></div></article>
+  </div>
+</section>
+
+<section id="life" class="section">
+  <div class="section-head"><h2>My life</h2><p>Habits, goals, books, movies, hobbies, and the little stuff.</p></div>
+  <div class="grid">
+    <article class="card"><h3>My tasks & habits</h3><p class="sub">Check things off as you go.</p>
+      <form id="taskForm" class="form"><div class="field wide"><label>Task or habit</label><input name="title" required placeholder="Read 10 pages, laundry, meal prep…"></div><div class="field"><label>Category</label><select name="category"><option>Daily habit</option><option>Home</option><option>Personal goal</option><option>Errand</option><option>Fun</option><option>Dog</option></select></div><div class="field"><label>Repeat</label><select name="repeat"><option value="today">Today</option><option value="daily">Daily habit</option><option value="once">One-time task</option></select></div><div class="form-actions"><button class="btn" type="submit">Add task</button></div></form>
+      <div class="divider"></div><div class="list-head"><h3>Today's list</h3><button class="small-btn" onclick="resetDailyTasks()">Reset daily habits</button></div><div id="taskList" class="stack"></div>
+    </article>
+    <article class="card"><h3>Watch, read, try</h3><p class="sub">Keep a little list of things you're excited about.</p>
+      <form id="mediaForm" class="form"><div class="field wide"><label>Title or idea</label><input name="title" required placeholder="Movie, book, hike, recipe…"></div><div class="field"><label>Type</label><select name="type"><option>Movie</option><option>TV show</option><option>Book</option><option>Place to explore</option><option>Activity</option><option>Other</option></select></div><div class="field"><label>Status</label><select name="status"><option>Want to</option><option>In progress</option><option>Finished</option></select></div><div class="form-actions"><button class="btn" type="submit">Add to my list</button></div></form>
+      <div class="divider"></div><div id="mediaList" class="stack"></div>
+    </article>
+    <article class="card"><h3>Meal ideas & groceries</h3><p class="sub">Capture meal ideas and build a quick shopping list.</p>
+      <form id="groceryForm" class="form"><div class="field wide"><label>Item</label><input name="title" required placeholder="Chicken, apples, oats…"></div><div class="field"><label>List</label><select name="category"><option>Groceries</option><option>Meal idea</option></select></div><div class="field"><label>Quantity / notes</label><input name="notes" placeholder="2 lb, for lunches…"></div><div class="form-actions"><button class="btn" type="submit">Add item</button></div></form>
+      <div class="divider"></div><div id="groceryList" class="stack"></div>
+    </article>
+    <article class="card"><h3>Szandy's care</h3><p class="sub">A simple log for your working partner.</p>
+      <form id="dogForm" class="form"><div class="field"><label>Date</label><input name="date" type="date" required></div><div class="field"><label>Care type</label><select name="type"><option>Walk</option><option>Training</option><option>Feeding / water</option><option>Grooming</option><option>Equipment</option><option>Health note</option><option>Other</option></select></div><div class="field wide"><label>Notes</label><input name="notes" required placeholder="Duration, skill, observation…"></div><div class="form-actions"><button class="btn" type="submit">Save care log</button></div></form>
+      <div class="divider"></div><div id="dogList" class="stack"></div>
+    </article>
+  </div>
+</section>
+
+<section id="settings" class="section">
+  <div class="section-head"><h2>Settings & data</h2><p>Your app, your preferences, your information.</p></div>
+  <div class="grid">
+    <article class="card"><h3>Personalize</h3><p class="sub">Choose a name for your dashboard.</p><form id="settingsForm" class="form"><div class="field wide"><label>Greeting name (optional)</label><input name="name" placeholder="Your name"></div><div class="field wide"><label>Weekly movement goal (minutes)</label><input name="goal" type="number" min="0" placeholder="150"></div><div class="form-actions"><button class="btn" type="submit">Save preferences</button></div></form><div class="notice">This starter version saves information in this browser on this device. It does not automatically sync to your other devices.</div></article>
+    <article class="card"><h3>Back up or move your data</h3><p class="sub">Export a backup before clearing browser data or switching devices.</p><div class="stack"><button class="btn" onclick="exportData()">Export backup (.json)</button><label class="btn secondary" style="text-align:center;cursor:pointer">Import backup (.json)<input type="file" id="importFile" accept=".json,application/json" hidden></label><button class="btn ghost" onclick="exportCSV()">Export transactions (.csv)</button><button class="btn danger" onclick="clearAll()">Clear all app data</button></div><div class="notice">A backup file contains the information you enter here. Keep it somewhere private. Clearing browser data can erase locally saved entries.</div></article>
+    <article class="card full"><h3>What this version can do</h3><p style="font-size:13px">Evergreen is a self-contained starter app. It works without an account and stores your entries in your browser. You can use the same app file on your phone and computer, but local entries remain separate until you manually export and import a backup. Automatic syncing, push notifications, Bevel integration, and bank connections are not included in this free starter version.</p></article>
+  </div>
+</section>
+<div class="footer">Evergreen · personal life dashboard · your data stays in your browser</div>
+</div>
+<nav class="tabs" aria-label="Main navigation">
+<button class="tab active" data-go="home"><span>⌂</span>Home</button>
+<button class="tab" data-go="schedule"><span>▦</span>Schedule</button>
+<button class="tab" data-go="health"><span>♡</span>Health</button>
+<button class="tab" data-go="money"><span>＄</span>Money</button>
+<button class="tab" data-go="life"><span>✳</span>My Life</button>
+<button class="tab" data-go="settings"><span>⚙</span>Settings</button>
+</nav>
+<script>
+const KEY='evergreen-life-v1';
+const today=()=>new Date().toLocaleDateString('en-CA');
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+const fresh=()=>({events:[],health:[],workouts:[],transactions:[],tasks:[],media:[],groceries:[],dog:[],budget:0,income:0,settings:{name:'',goal:150}});
+let db;try{db={...fresh(),...JSON.parse(localStorage.getItem(KEY)||'{}')};}catch(e){db=fresh()}
+function save(){localStorage.setItem(KEY,JSON.stringify(db));render();}function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function money(n){return Number(n||0).toLocaleString('en-US',{style:'currency',currency:'USD'});}
+function toast(s){const t=document.getElementById('toast');t.textContent=s;t.style.display='block';setTimeout(()=>t.style.display='none',2200);}
+function go(id){document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id===id));document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.go===id));window.scrollTo({top:0,behavior:'smooth'});if(id==='schedule')document.getElementById('eventFilter').value ||= today();}
+document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+document.getElementById('todayDate').textContent=new Date().toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'});
+function setDateDefaults(){document.querySelectorAll('input[type=date]').forEach(x=>{if(!x.value)x.value=today()});}
+function empty(msg){return `<div class="empty">${msg}</div>`}
+function removeBtn(kind,id){return `<button class="small-btn danger" onclick="removeItem('${kind}','${id}')">Delete</button>`}
+function removeItem(kind,id){if(!confirm('Delete this entry?'))return;db[kind]=db[kind].filter(x=>x.id!==id);save();}
+function item(title,meta,right=''){return `<div class="item"><div class="item-main"><div class="item-title">${esc(title)}</div><div class="item-meta">${esc(meta)}</div></div>${right}</div>`}
+function renderEvents(){let date=document.getElementById('eventFilter').value||today();let all=[...db.events].sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));let filtered=all.filter(x=>x.date>=today());let picked=all.filter(x=>x.date===date);document.getElementById('eventList').innerHTML=picked.length?picked.map(x=>item((x.time?x.time+' · ':'')+x.title,x.category+(x.duration?' · '+x.duration+' min':'')+(x.notes?' · '+x.notes:''),removeBtn('events',x.id))).join(''):empty('Nothing planned for this date yet.');document.getElementById('homeEvents').innerHTML=filtered.slice(0,4).map(x=>item((x.date===today()?'Today':new Date(x.date+'T12:00:00').toLocaleDateString(undefined,{month:'short',day:'numeric')})+(x.time?' · '+x.time:''),x.title+' · '+x.category)).join('')||empty('Add an event to start planning.');document.getElementById('planCount').textContent=filtered.length+' upcoming';}
+function renderHealth(){let h=[...db.health].sort((a,b)=>b.date.localeCompare(a.date));let latest=h[0];document.getElementById('sleepMetric').innerHTML=latest&&latest.sleep?Number(latest.sleep).toFixed(2).replace(/\.?0+$/,'')+' <small>hrs sleep</small>':'— <small>hrs sleep</small>';document.getElementById('sleepBar').style.width=Math.min(100,(Number(latest?.sleep||0)/8)*100)+'%';document.getElementById('energyLabel').textContent=latest?'Latest check-in · energy '+(latest.energy||'—')+'/5 · mood '+(latest.mood||'—')+'/5':'Add your check-in in Health';document.getElementById('healthList').innerHTML=h.slice(0,8).map(x=>item(x.date+' · '+(x.sleep?x.sleep+' hrs sleep':'Sleep not logged'),`Energy ${x.energy||'—'}/5 · Mood ${x.mood||'—'}/5${x.weight?' · '+x.weight+' lb':''}${x.cycle?' · cycle day '+x.cycle:''}${x.notes?' · '+x.notes:''}`,removeBtn('health',x.id))).join('')||empty('Your check-ins will appear here.');let week=new Date();week.setDate(week.getDate()-6);let mins=db.workouts.filter(x=>x.date>=week.toLocaleDateString('en-CA')&&x.date<=today()).reduce((s,x)=>s+Number(x.minutes||0),0);document.getElementById('weeklyMinutes').textContent=mins+' min';document.getElementById('workoutList').innerHTML=[...db.workouts].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,5).map(x=>item(x.type+' · '+x.minutes+' min',x.date+' · '+x.effort+(x.notes?' · '+x.notes:''),removeBtn('workouts',x.id))).join('')||empty('Log your first movement session.');}
+function renderMoney(){let month=today().slice(0,7);let tx=db.transactions.filter(x=>x.date.startsWith(month));let spent=tx.filter(x=>['expense','bill','saving'].includes(x.type)).reduce((s,x)=>s+Number(x.amount),0);let income=tx.filter(x=>x.type==='income').reduce((s,x)=>s+Number(x.amount),0);document.getElementById('budgetMetric').innerHTML=money(spent)+' <small>spent</small>';document.getElementById('budgetLabel').textContent=db.budget?money(Math.max(0,db.budget-spent))+' left of '+money(db.budget):'Set a monthly budget to begin';document.getElementById('budgetBar').style.width=db.budget?Math.min(100,spent/db.budget*100)+'%':'0%';document.getElementById('moneySpent').textContent=money(spent);document.getElementById('moneyRemaining').textContent=money(db.budget-spent);document.getElementById('moneyProgress').style.width=db.budget?Math.min(100,spent/db.budget*100)+'%':'0%';let filt=document.getElementById('transactionFilter').value;let list=[...db.transactions].filter(x=>filt==='all'||x.date.startsWith(month)).sort((a,b)=>b.date.localeCompare(a.date));document.getElementById('transactionList').innerHTML=list.map(x=>item(x.title,`${x.date} · ${x.category} · ${x.type}`,`<strong style="font-size:12px;color:${x.type==='income'?'#52805a':'inherit'}">${x.type==='income'?'+':'−'}${money(x.amount)}</strong> ${removeBtn('transactions',x.id)}`)).join('')||empty('No transactions yet.');}
+function renderTasks(){let t=db.tasks.filter(x=>x.repeat==='daily'||x.date===today());let done=t.filter(x=>x.done&&x.doneDate===today()).length;document.getElementById('taskMetric').innerHTML=done+' <small>of '+t.length+' done</small>';document.getElementById('taskLabel').textContent=t.length?'Keep going at your own pace':'Tasks you add will show here';document.getElementById('taskBar').style.width=t.length?(done/t.length*100)+'%':'0%';document.getElementById('taskList').innerHTML=t.map(x=>`<div class="item"><input type="checkbox" ${x.done&&x.doneDate===today()?'checked':''} onchange="toggleTask('${x.id}',this.checked)"><div class="item-main"><div class="item-title" style="${x.done&&x.doneDate===today()?'text-decoration:line-through;opacity:.6':''}">${esc(x.title)}</div><div class="item-meta">${esc(x.category)} · ${x.repeat==='daily'?'Daily habit':'Today'}</div></div>${removeBtn('tasks',x.id)}</div>`).join('')||empty('Add a habit or task to get started.');document.getElementById('homeTasks').innerHTML=t.filter(x=>!(x.done&&x.doneDate===today())).slice(0,3).map(x=>item(x.title,x.category)).join('')||empty('You are all caught up, or you can add a new task.');}
+function toggleTask(id,checked){let x=db.tasks.find(t=>t.id===id);if(x){x.done=checked;x.doneDate=checked?today():'';save();}}
+function resetDailyTasks(){db.tasks.filter(x=>x.repeat==='daily').forEach(x=>{x.done=false;x.doneDate=''});save();toast('Daily habits reset.');}
+function renderMedia(){document.getElementById('mediaList').innerHTML=db.media.map(x=>`<div class="item"><div class="item-main"><div class="item-title">${esc(x.title)}</div><div class="item-meta">${esc(x.type)}</div><select class="pill" style="margin-top:6px" onchange="updateMedia('${x.id}',this.value)">${['Want to','In progress','Finished'].map(s=>`<option ${s===x.status?'selected':''}>${s}</option>`).join('')}</select></div>${removeBtn('media',x.id)}</div>`).join('')||empty('Save a movie, book, or adventure idea.');}
+function updateMedia(id,status){let x=db.media.find(x=>x.id===id);if(x){x.status=status;save();}}
+function renderGroceries(){document.getElementById('groceryList').innerHTML=db.groceries.map(x=>`<div class="item"><input type="checkbox" ${x.done?'checked':''} onchange="toggleGrocery('${x.id}',this.checked)"><div class="item-main"><div class="item-title" style="${x.done?'text-decoration:line-through;opacity:.6':''}">${esc(x.title)}</div><div class="item-meta">${esc(x.category)}${x.notes?' · '+esc(x.notes):''}</div></div>${removeBtn('groceries',x.id)}</div>`).join('')||empty('Add groceries or meal ideas as they come to you.');}
+function toggleGrocery(id,done){let x=db.groceries.find(x=>x.id===id);if(x){x.done=done;save();}}
+function renderDog(){document.getElementById('dogList').innerHTML=[...db.dog].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,8).map(x=>item(x.type,x.date+' · '+x.notes,removeBtn('dog',x.id))).join('')||empty('Szandy’s care notes will appear here.');}
+function render(){renderEvents();renderHealth();renderMoney();renderTasks();renderMedia();renderGroceries();renderDog();document.getElementById('greeting').innerHTML=`${db.settings.name?'Hey, '+esc(db.settings.name)+'.':'A little more balance.'}<br>${db.settings.name?'Here’s your day, at a glance.':'A little more breathing room.'}`;document.getElementById('settingsForm').elements.name.value=db.settings.name||'';document.getElementById('settingsForm').elements.goal.value=db.settings.goal||150;document.getElementById('budgetForm').elements.budget.value=db.budget||'';document.getElementById('budgetForm').elements.income.value=db.income||'';}
+function formObj(form){return Object.fromEntries(new FormData(form).entries())}
+document.getElementById('eventForm').addEventListener('submit',e=>{e.preventDefault();db.events.push({...formObj(e.target),id:uid()});e.target.reset();setDateDefaults();save();toast('Added to your schedule.');});
+document.getElementById('eventFilter').addEventListener('change',renderEvents);
+document.getElementById('healthForm').addEventListener('submit',e=>{e.preventDefault();let x=formObj(e.target);let old=db.health.findIndex(y=>y.date===x.date);x.id=old>=0?db.health[old].id:uid();if(old>=0)db.health[old]=x;else db.health.push(x);e.target.reset();setDateDefaults();save();toast('Check-in saved.');});
+document.getElementById('workoutForm').addEventListener('submit',e=>{e.preventDefault();db.workouts.push({...formObj(e.target),id:uid()});e.target.reset();setDateDefaults();save();toast('Movement logged.');});
+document.getElementById('budgetForm').addEventListener('submit',e=>{e.preventDefault();let x=formObj(e.target);db.budget=Number(x.budget||0);db.income=Number(x.income||0);save();toast('Budget saved.');});
+document.getElementById('transactionForm').addEventListener('submit',e=>{e.preventDefault();let x=formObj(e.target);x.amount=Number(x.amount);x.id=uid();db.transactions.push(x);e.target.reset();setDateDefaults();save();toast('Transaction added.');});
+document.getElementById('transactionFilter').addEventListener('change',renderMoney);
+document.getElementById('taskForm').addEventListener('submit',e=>{e.preventDefault();db.tasks.push({...formObj(e.target),id:uid(),date:today(),done:false,doneDate:''});e.target.reset();save();toast('Task added.');});
+document.getElementById('mediaForm').addEventListener('submit',e=>{e.preventDefault();db.media.push({...formObj(e.target),id:uid()});e.target.reset();save();toast('Added to your list.');});
+document.getElementById('groceryForm').addEventListener('submit',e=>{e.preventDefault();db.groceries.push({...formObj(e.target),id:uid(),done:false});e.target.reset();save();toast('Added to your list.');});
+document.getElementById('dogForm').addEventListener('submit',e=>{e.preventDefault();db.dog.push({...formObj(e.target),id:uid()});e.target.reset();setDateDefaults();save();toast('Care log saved.');});
+document.getElementById('settingsForm').addEventListener('submit',e=>{e.preventDefault();let x=formObj(e.target);db.settings={name:x.name,goal:Number(x.goal||150)};save();toast('Preferences saved.');});
+function exportData(){let blob=new Blob([JSON.stringify(db,null,2)],{type:'application/json'});download(blob,'evergreen-backup-'+today()+'.json');}
+function exportCSV(){let rows=[['Date','Description','Amount','Type','Category'],...db.transactions.map(x=>[x.date,x.title,x.amount,x.type,x.category])];let csv=rows.map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\r\n');download(new Blob([csv],{type:'text/csv'}),'evergreen-transactions-'+today()+'.csv');}
+function download(blob,name){let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
+document.getElementById('importFile').addEventListener('change',async e=>{let f=e.target.files[0];if(!f)return;try{let x=JSON.parse(await f.text());if(!x||!Array.isArray(x.events)||!Array.isArray(x.transactions))throw new Error();if(!confirm('Import this backup and replace the current app data? Export your current data first if you want to keep it.'))return;db={...fresh(),...x};save();toast('Backup imported.');}catch(err){alert('That file does not look like a valid Evergreen backup.');}e.target.value='';});
+function clearAll(){if(!confirm('This permanently clears all Evergreen data saved in this browser. Export a backup first if you want to keep it.'))return;if(!confirm('Are you sure? This cannot be undone.'))return;db=fresh();save();setDateDefaults();toast('App data cleared.');}
+setDateDefaults();render();
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
+}
+</script>
+</body>
+</html>
