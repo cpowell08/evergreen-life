@@ -1,9 +1,9 @@
 {
-  "name": "Evergreen \u2014 My Life",
+  "name": "Evergreen — My Life",
   "short_name": "Evergreen",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#f4f5ef",
   "theme_color": "#183d32",
-  "description": "A personal life-management dashboard."
+  "description": "Personal life dashboard for health, money, schedule, and daily tasks."
 }
